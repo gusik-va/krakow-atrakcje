@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Kraków, Historia Krakowa, Atrakcje w krakowie" />
+	<script src="galeria.js"></script>
+    <title>Kraków - Miasto Królów</title>
+    <link rel="icon" href="grafika/favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
 
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        main {
+            flex: 3;
+            padding: 20px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #D3D3D3;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #555;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+        }
+		.hidden {
+		display: none;
+		}
+
+		#popup {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+		#popup img {
+		max-width: 80%;
+		max-height: 80%;
+		}
+
+		#close {
+		position: absolute;
+		top: 20px;
+		right: 40px;
+		font-size: 40px;
+		color: white;
+		cursor: pointer;
+		}
+
+		.thumb {
+		width: 100px;
+		}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kraków</h1>
+    <p>Dawna stolica Polski</p>
+</header>
+
+<nav>
+    <a href="index.html">Historia</a>
+    <a href="atrakcje.html">Atrakcje</a>
+    <a href="krole.html">Wielkie królowie Polski</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<div class="container">
+    <main>
+        <section id="atrakcje">
+            <h2>Atrakcje turystyczne</h2>
+            <table>
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Zdjęcie</th>
+                    <th>Opis</th>
+                </tr>
+                <tr>
+                    <td>Wawel</td>
+                    <td><img src="grafika/Wawel.jpeg" class="thumb"></td>
+                    <td>Zamek królewski i katedra</td>
+                </tr>
+                <tr>
+                    <td>Rynek Główny</td>
+                    <td><img src="grafika/Rynek.jpeg" class="thumb"></td>
+                    <td>Największy średniowieczny rynek w Europie</td>
+                </tr>
+                <tr>
+                    <td>Sukiennice</td>
+                    <td><img src="grafika/Sukiennice.jpeg" class="thumb"></td>
+                    <td>Historyczna hala targowa</td>
+                </tr>
+                <tr>
+                    <td>Kazimierz</td>
+                    <td><img src="grafika/Kazimierz.jpeg" class="thumb"></td>
+                    <td>Dzielnica żydowska z klimatem</td>
+                </tr>
+            </table>
+        </section>			
+    </main>
+
+    <aside>
+        <h3>Ciekawostki</h3>
+        <ul>
+            <li>Smok Wawelski to symbol miasta</li>
+            <li>Kraków ma ponad 100 kościołów</li>
+            <li>Miasto jest na liście UNESCO</li>
+        </ul>
+    </aside>
+</div>
+<footer id="kontakt">
+    <p>Autor strony: Anton | 2026</p>
+</footer>
+
+</body>
+</html>
