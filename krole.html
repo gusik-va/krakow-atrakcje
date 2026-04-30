@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Kraków, Historia Krakowa, Atrakcje w krakowie" />
+	<script src="galeria.js"></script>
+    <title>Kraków - Miasto Królów</title>
+    <link rel="icon" href="grafika/favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
 
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        main {
+            flex: 3;
+            padding: 20px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #D3D3D3;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #555;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+        }
+		.hidden {
+		display: none;
+		}
+
+		#popup {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+		#popup img {
+		max-width: 80%;
+		max-height: 80%;
+		}
+
+		#close {
+		position: absolute;
+		top: 20px;
+		right: 40px;
+		font-size: 40px;
+		color: white;
+		cursor: pointer;
+		}
+
+		.thumb {
+		width: 100px;
+		}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kraków</h1>
+    <p>Dawna stolica Polski</p>
+</header>
+
+<nav>
+    <a href="index.html">Historia</a>
+    <a href="atrakcje.html">Atrakcje</a>
+    <a href="krole.html">Wielkie królowie Polski</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<div class="container">
+    <main>
+		    <section id="krole">
+            <h2>Wielkie królowie Polski</h2>
+            <script>
+                var galeria = new Galeria('galeria', new Array(
+                    new Array('grafika/Bolesław I ChrobryM.jpeg', 'grafika/Bolesław I Chrobry.jpeg', '<b>Bolesław I Chrobry (992–1025):</b> Pierwszy koronowany król Polski, który znacznie powiększył terytorium kraju i umocnił jego pozycję w Europie, m.in. dzięki zjazdowi gnieźnieńskiemu.'),
+                    new Array('grafika/Kazimierz III WielkiM.jpeg', 'grafika/Kazimierz III Wielki.jpeg', '<b>Kazimierz III Wielki (1333–1370):</b> Ostatni król z dynastii Piastów, nazwany "budowniczym państwa". Zreformował prawo, założył Akademię Krakowską i "zastał Polskę drewnianą, a zostawił murowaną".'),
+                    new Array('grafika/Wladyslaw II JagielloM.jpeg', 'grafika/Wladyslaw II Jagiello.jpeg', '<b>Władysław II Jagiełło (1386–1434):</b> Wielki książę litewski i król Polski, twórca potęgi dynastii Jagiellonów. Zwycięzca w bitwie pod Grunwaldem (1410), który rozpoczął epokę unii polsko-litewskiej.'),
+                    new Array('grafika/Stefan BatoryM.jpeg', 'grafika/Stefan Batory.jpeg', '<b>Stefan Batory (1576–1586):</b> Wybitny dowódca wojskowy, który dzięki reformom armii i zwycięskim wojnom z Rosją o Inflanty umocnił pozycję Rzeczypospolitej na arenie międzynarodowej.'),
+                    new Array('grafika/Jan III SobieskiM.jpeg', 'grafika/Jan III Sobieski.jpeg', '<b>Jan III Sobieski (1674–1696):</b> Wielki król i wódz, słynny z odsieczy wiedeńskiej w 1683 r., która zatrzymała ekspansję Imperium Osmańskiego w Europie.'),
+                    new Array('grafika/Kazimierz I OdnowicielM.jpeg', 'grafika/Kazimierz I Odnowiciel.jpeg', '<b>Kazimierz I Odnowiciel (1034–1058):</b> Piastowski władca, który podniósł kraj z upadku po reakcji pogańskiej i najeździe czeskim, jednocząc podzielone państwo.'),
+                ));
+            </script>
+            </section>
+
+			
+    </main>
+
+    <aside>
+        <h3>Ciekawostki</h3>
+        <ul>
+            <li>Smok Wawelski to symbol miasta</li>
+            <li>Kraków ma ponad 100 kościołów</li>
+            <li>Miasto jest na liście UNESCO</li>
+        </ul>
+    </aside>
+</div>
+<footer id="kontakt">
+    <p>Autor strony: Anton | 2026</p>
+</footer>
+
+</body>
+</html>
